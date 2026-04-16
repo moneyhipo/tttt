@@ -13,6 +13,7 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 # 환경 변수 로드
 load_dotenv()
 api_key=os.getenv("OPENAI_API_KEY")
+os.environ["OPENAI_API_KEY"] = api_key
 
 # PDF 처리 및 벡터 스토어 초기화 (캐싱 적용)
 @st.cache_resource
