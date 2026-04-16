@@ -11,7 +11,7 @@ from langchain_core.runnables import RunnablePassthrough, RunnableWithMessageHis
 from langchain_community.chat_message_histories import ChatMessageHistory
 
 # 환경 변수 로드
-load_dotenv(".env")
+load_dotenv()
 api_key=os.getenv("OPENAI_API_KEY")
 
 # PDF 처리 및 벡터 스토어 초기화 (캐싱 적용)
